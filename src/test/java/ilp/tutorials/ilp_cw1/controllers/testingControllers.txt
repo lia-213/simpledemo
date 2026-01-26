@@ -1,0 +1,3 @@
+Your test coverage should focus on:
+- Verify that endpoints return correct HTTP status codes and call the service layer as expected.
+- Handle bad inputs and edge cases.

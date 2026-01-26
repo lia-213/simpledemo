@@ -1,0 +1,1 @@
+Handles HTTP requests/responses. Accepts input, calls service, returns output (JSON, HTTP codes). Think of it as the “web endpoint layer.”

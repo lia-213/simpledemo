@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  # CW2 Service (existing Spring Boot application)
+  cw2-service:
+    image: ilp_submission_image:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - ILPENDPOINT=${ILPENDPOINT:-https://ilp-rest-2025-bvh6e9hschfagrgy.ukwest-01.azurewebsites.net}
+    networks:
+      - medsupply-network
+  simpledemo:
+    build: .
+    ports:
+      - "8080:8080"
+      - "8501:8501"
+    env_file:
+      - .env
+
+  # Dispatch Engine API (FastAPI)
+  dispatch-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - ILPENDPOINT=${ILPENDPOINT:-https://https://ilp-rest-2025-bvh6e9hschfagrgy.ukwest-01.azurewebsites.net}
+      - CW2_ENDPOINT=http://cw2-service:8080
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.5-flash}
+    depends_on:
+      - cw2-service
+    networks:
+      - medsupply-network
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+  # Command Center UI (Streamlit)
+  ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - DISPATCH_API_URL=http://dispatch-api:8000
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL=${GEMINI_MODEL:-gemini-2.5-flash}
+    depends_on:
+      - dispatch-api
+    networks:
+      - medsupply-network
+    command: ["streamlit", "run", "ui_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
+networks:
+  medsupply-network:
+    driver: bridge

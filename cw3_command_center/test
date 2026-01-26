@@ -1,0 +1,75 @@
+import requests
+import json
+
+# Base URL of your API
+BASE_URL = "http://localhost:8000"
+
+# ---------------------------
+# 1️⃣ Health / Docs endpoint
+# ---------------------------
+def check_docs():
+    url = f"{BASE_URL}/docs"
+    r = requests.get(url)
+    print("GET /docs:", r.status_code)
+    print(r.text[:500], "...")  # print first 500 chars
+
+# ---------------------------
+# 2️⃣ /plan endpoint (POST)
+# ---------------------------
+def create_plan():
+    url = f"{BASE_URL}/plan"
+    payload = {
+        "dispatches": [
+            {
+                "id": 1,
+                "date": "2025-11-27",
+                "time": "09:00",
+                "requirements": {"capacity": 5.0, "cooling": True, "heating": False},
+                "delivery": {"lng": -3.2, "lat": 55.95}
+            }
+        ],
+        "strategy": "min_cost"
+    }
+    r = requests.post(url, json=payload)
+    print("POST /plan:", r.status_code)
+    print(json.dumps(r.json(), indent=2))
+
+# ---------------------------
+# 3️⃣ /summary/fleet endpoint (GET)
+# ---------------------------
+def fleet_summary():
+    url = f"{BASE_URL}/summary/fleet"
+    r = requests.get(url)
+    print("GET /summary/fleet:", r.status_code)
+    print(json.dumps(r.json(), indent=2))
+
+# ---------------------------
+# 4️⃣ /what-if endpoint (POST)
+# ---------------------------
+def what_if_analysis():
+    url = f"{BASE_URL}/what-if"
+    payload = {
+        "dispatches": [
+            {
+                "id": 1,
+                "date": "2025-11-27",
+                "time": "09:00",
+                "requirements": {"capacity": 5.0, "cooling": True, "heating": False},
+                "delivery": {"lng": -3.2, "lat": 55.95}
+            }
+        ],
+        "strategyA": "min_cost",
+        "strategyB": "min_moves"
+    }
+    r = requests.post(url, json=payload)
+    print("POST /what-if:", r.status_code)
+    print(json.dumps(r.json(), indent=2))
+
+# ---------------------------
+# Run all checks
+# ---------------------------
+if __name__ == "__main__":
+    check_docs()
+    create_plan()
+    fleet_summary()
+    what_if_analysis()

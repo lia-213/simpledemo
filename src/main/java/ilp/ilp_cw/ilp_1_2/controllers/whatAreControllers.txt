@@ -1,0 +1,3 @@
+Handles HTTP requests/responses. Accepts input, calls service, returns output (JSON, HTTP codes). Think of it as the “web endpoint layer.”
+In REST APIs, the “view” is the JSON response sent by the controller. There’s no HTML template here, so controller output acts as the view.
+The controller is the layer that interacts with the “view” (HTTP client), deciding what to send back.

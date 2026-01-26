@@ -1,0 +1,82 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+# Ignore PDFs (course specs, etc.)
+
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### tar file ###
+./ilp_submission_image.tar
+ilp_submission_image.tar
+
+# Persisted GeoJSONs from Streamlit UI
+# Ignore all files under data/geojsons (keep the folder local but not tracked)
+data/geojsons/
+data/geojsons/*
+s2131930_complete.tar
+LatexStuff/document.aux
+LatexStuff/document.fdb_latexmk
+LatexStuff/document.fls
+LatexStuff/document.log
+LatexStuff/document.out
+LatexStuff/document.synctex.gz
+LatexStuff/document.tex
+LatexStuff/document_5page.aux
+LatexStuff/document_5page.fdb_latexmk
+LatexStuff/document_5page.fls
+LatexStuff/document_5page.log
+LatexStuff/document_5page.out
+LatexStuff/document_5page.synctex.gz
+LatexStuff/document_5page.tex
+LatexStuff/document_condensed.aux
+LatexStuff/document_condensed.log
+LatexStuff/document_condensed.out
+LatexStuff/document.tex.backup
+LatexStuff/jacocoreport.png
+LatexStuff/PostmanSS1.jpeg
+LatexStuff/PostmanSS2.jpeg
+LatexStuff/requirements_specification.aux
+LatexStuff/requirements_specification.fdb_latexmk
+LatexStuff/requirements_specification.fls
+LatexStuff/requirements_specification.log
+LatexStuff/requirements_specification.out
+LatexStuff/requirements_specification.synctex.gz
+LatexStuff/requirements_specification.tex
+LatexStuff/Screenshot 2026-01-25 at 11.57.55.png
+LatexStuff/Surefirereports.png
+.DS_Store
+.DS_Store
+LatexStuff/document_condensed.pdf
+LatexStuff/document.pdf
+LatexStuff/githubactionsbuildfailduetojacoco.png
+LatexStuff/githubyml.png
+

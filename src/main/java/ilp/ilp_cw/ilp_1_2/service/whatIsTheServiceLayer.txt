@@ -1,0 +1,1 @@
+Contains business logic. Computes distances, validates angles, checks regions. It doesn’t know anything about HTTP or the client.

@@ -1,0 +1,106 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\lydbo\\IdeaProjects\\simpledemo\\cw3_command_center']
+INFO:     Uvicorn running on http://127.0.0.1:8002 (Press CTRL+C to quit)
+INFO:     Started reloader process [14708] using WatchFiles
+INFO:     Started server process [32268]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53197 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54137 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57440 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58800 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61475 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49744 - "GET /cw2/drone/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62513 - "GET /cw2/drone/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62653 - "GET /cw2/drone/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50568 - "GET /cw2/drone/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52553 - "GET /cw2/drone/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52558 - "GET /cw2/drone/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52562 - "GET /cw2/drone/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52567 - "GET /cw2/drone/9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52569 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52575 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+[DEBUG] ILP capacities: [4.0, 8.0, 20.0, 8.0, 12.0, 4.0, 8.0, 20.0, 8.0, 12.0]
+[DEBUG] Querying CW2: http://localhost:8080/api/v1/dronesWithCooling/true
+[DEBUG] CW2 /api/v1/dronesWithCooling/true response: [1,5,8,9]
+[DEBUG] Querying CW2: http://localhost:8080/api/v1/dronesWithHeating/true
+[DEBUG] CW2 /api/v1/dronesWithHeating/true response: [1,2,4,5,6,7,9]
+INFO:     127.0.0.1:49766 - "GET /summary/fleet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62571 - "GET /drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57149 - "GET /drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57152 - "GET /drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57154 - "GET /fleet/drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57156 - "GET /summary/drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57158 - "GET /drones-for-service-points HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57160 - "GET /service-point-drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57163 - "GET /servicePoints/drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57165 - "GET /servicePointDrones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58729 - "POST /what-if HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55066 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65164 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57726 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63589 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55073 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56419 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51509 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49375 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49386 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49392 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49405 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61637 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61643 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57457 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57467 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57471 - "GET /cw2/drone/4 HTTP/1.1" 200 OK
+[DEBUG] ILP capacities: [4.0, 8.0, 20.0, 8.0, 12.0, 4.0, 8.0, 20.0, 8.0, 12.0]
+[DEBUG] Querying CW2: http://localhost:8080/api/v1/dronesWithCooling/true
+[DEBUG] CW2 /api/v1/dronesWithCooling/true response: [1,5,8,9]
+[DEBUG] Querying CW2: http://localhost:8080/api/v1/dronesWithHeating/true
+[DEBUG] CW2 /api/v1/dronesWithHeating/true response: [1,2,4,5,6,7,9]
+INFO:     127.0.0.1:50853 - "GET /summary/fleet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55659 - "GET /drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49681 - "GET /drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49692 - "GET /drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49695 - "GET /fleet/drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49698 - "GET /summary/drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49701 - "GET /drones-for-service-points HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49704 - "GET /service-point-drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49707 - "GET /servicePoints/drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49710 - "GET /servicePointDrones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56857 - "POST /what-if HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61892 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61900 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61907 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61914 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49331 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56921 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65210 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57459 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57464 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62981 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62987 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62991 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50696 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56600 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56604 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58552 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58554 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50240 - "GET /cw2/drone/1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50243 - "GET /cw2/drone/4 HTTP/1.1" 200 OK
+[DEBUG] ILP capacities: [4.0, 8.0, 20.0, 8.0, 12.0, 4.0, 8.0, 20.0, 8.0, 12.0]
+[DEBUG] Querying CW2: http://localhost:8080/api/v1/dronesWithCooling/true
+[DEBUG] CW2 /api/v1/dronesWithCooling/true response: [1,5,8,9]
+[DEBUG] Querying CW2: http://localhost:8080/api/v1/dronesWithHeating/true
+[DEBUG] CW2 /api/v1/dronesWithHeating/true response: [1,2,4,5,6,7,9]
+INFO:     127.0.0.1:61664 - "GET /summary/fleet HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57342 - "GET /drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57346 - "GET /drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57349 - "GET /drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57351 - "GET /fleet/drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57353 - "GET /summary/drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57355 - "GET /drones-for-service-points HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57357 - "GET /service-point-drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57359 - "GET /servicePoints/drones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57361 - "GET /servicePointDrones HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52508 - "POST /what-if HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52520 - "POST /plan HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64950 - "GET /cw2/drone/1 HTTP/1.1" 200 OK

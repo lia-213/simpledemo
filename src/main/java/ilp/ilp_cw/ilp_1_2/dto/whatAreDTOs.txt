@@ -1,0 +1,3 @@
+DTOs are simple carriers for transferring data to/from the client.
+Essentially a simple Java class used to transfer data between layers of an app (e.g. from the service layer to the client)
+DTOs are typically mutable and contain getter and setter methods for their fields (these are handled by lombok here)

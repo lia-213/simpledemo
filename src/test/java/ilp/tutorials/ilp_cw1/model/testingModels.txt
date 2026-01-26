@@ -1,0 +1,4 @@
+TTest coverage should focus on:
+Only if they contain non-trivial logic (like Region.contains() or Position.isValidPosition()).
+
+Otherwise, plain POJOs/DTOs don’t need tests.
